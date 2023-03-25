@@ -1,0 +1,54 @@
+:root {
+  /* IRIS 
+        CTAs
+        Focused
+        Active states
+        Links */
+  --primary-brand-color: #4d5ae5;
+  /* OCEAN 
+        CTAs */
+  --pressed-state-color: #404bbf;
+  /* NAVY BLUE 
+        Overlays
+        Shadows
+        Headings */
+  --dark-color: #2e2f42;
+  /* GREEN
+        Valid fields
+        Success messages */
+  --success-color: #31d0aa;
+  /* SLATE 
+        Body text */
+  --text-color: #434455;
+  /* LIGHT SLATE 
+        Helper text 
+        Deemphasized text */
+  --subtle-text-color: #8e8f99;
+  /* CORNFLOWER
+        Accent color
+        Hairlines
+        Subtle backgrounds */
+  --accent-color: #e7e9fc;
+  /* CLOUD
+        Light mode backgrounds
+        Light mode Dialogs/alerts */
+  --light-color: #f4f4fd;
+  /* NAVY BLUE MODAL
+        Overlay */
+  --modal-overlay-color: rgba(46, 47, 66, 0.4);
+  /* GREY
+        Hero image background */
+  --hero-background-color: rgba(46, 47, 66, 0.7);
+  /* WHITE
+        Dark background text color */
+  --white-color: #ffffff;
+  /* LIGHT WHITE
+        Modal background */
+  --light-whitte-color: #fcfcfc;
+  /* LIGHT BLACK
+        Footer social background
+        Close button border color */
+  --light-black: rgba(255, 255, 255, 0.1);
+
+  --transition-time-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

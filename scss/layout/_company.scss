@@ -1,0 +1,43 @@
+.company-link {
+  width: 190px;
+}
+.company-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  @media screen and (min-width: 768px) {
+    column-gap: 24px;
+  }
+  row-gap: 72px;
+  flex-wrap: wrap;
+}
+
+.company-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+
+  height: 88px;
+  width: 190px;
+  @media screen and (min-width: 768px) {
+    width: 168px;
+  }
+  transition: border-color var(--transition-time-func);
+}
+
+.company-link:hover,
+.company-link:focus {
+  border-color: var(--pressed-state-color);
+}
+
+.company-icon {
+  fill: var(--subtle-text-color);
+  transition: fill var(--transition-time-func);
+}
+.company-link:hover .company-icon,
+.company-link:focus .company-icon {
+  fill: var(--pressed-state-color);
+}

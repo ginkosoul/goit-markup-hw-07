@@ -1,0 +1,29 @@
+.about {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  padding-top: 0px;
+}
+.about-header {
+  margin-bottom: 72px;
+  text-align: center;
+
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-color);
+}
+
+.about-img {
+  display: block;
+}
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.about-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}

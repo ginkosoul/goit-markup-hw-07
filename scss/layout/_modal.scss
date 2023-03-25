@@ -1,0 +1,162 @@
+/* ==============================MODAL WINDOW============================== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-overlay-color);
+
+  transition: opacity var(--transition-time-func),
+    visibility var(--transition-time-func);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden > .modal {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+.modal {
+  padding-top: 72px;
+  padding-bottom: 24px;
+  padding-inline: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  max-width: 100vw;
+
+  background-color: var(--light-whitte-color);
+  transition: opacity var(--transition-time-func),
+    transform var(--transition-time-func);
+}
+
+body.overflow {
+  overflow: hidden;
+}
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  margin-bottom: 16px;
+}
+
+/* ==============================INPUT FORM============================== */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-input-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+.modal-comment-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding: 8px;
+  padding-left: 38px;
+  margin-top: 4px;
+
+  outline: none;
+  transition: border-color var(--transition-time-func);
+}
+
+.modal-input:focus,
+.modal-input-comment:focus {
+  border-color: var(--primary-brand-color);
+}
+.modal-input:focus + .modal-input-icon {
+  fill: var(--primary-brand-color);
+}
+
+.modal-input-comment {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  margin-top: 4px;
+  outline: none;
+  transition: border-color var(--transition-time-func);
+}
+.modal-submit-btn {
+  min-width: 160px;
+  align-self: center;
+}
+.modal-input-wrapper {
+  position: relative;
+  display: block;
+}
+.modal-input-icon {
+  position: absolute;
+  top: calc(50% + 2px);
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill var(--transition-time-func);
+}
+
+.user-policy-label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 24px;
+}
+
+.user-policy-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+
+  border: 1.25px solid var(--dark-color);
+  border-radius: 2px;
+  transition: background-color var(--transition-time-func),
+    border-color var(--transition-time-func);
+}
+.modal-checkbox-icon {
+  fill: transparent;
+  transition: fill var(--transition-time-func);
+}
+.policy-input:checked + .user-policy-icon > .modal-checkbox-icon {
+  fill: var(--light-color);
+}
+.policy-input:checked + .user-policy-icon {
+  background-color: var(--pressed-state-color);
+  border-color: var(--pressed-state-color);
+}
+
+/* ==============================/INPUT FORM============================== */
+
+/* ==============================/MODAL WINDOW============================== */
