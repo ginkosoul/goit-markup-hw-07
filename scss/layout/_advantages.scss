@@ -29,12 +29,7 @@
 }
 
 .advantage-list-name {
-  text-align: center;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
   @media screen and (min-width: 1200px) {
@@ -42,10 +37,6 @@
     font-size: 20px;
     line-height: 1.2;
   }
-
-  letter-spacing: 0.02em;
-
-  color: var(--dark-color);
   margin-bottom: 8px;
 }
 .advantage-list-desc {

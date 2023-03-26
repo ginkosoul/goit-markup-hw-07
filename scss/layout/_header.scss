@@ -82,6 +82,7 @@
 .menu-link {
   display: flex;
   flex-direction: column;
+  text-align: left;
 
   color: var(--text-color);
   transition: color var(--transition-time-func);

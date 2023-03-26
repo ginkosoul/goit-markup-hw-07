@@ -22,12 +22,11 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
+  column-gap: 24px;
   row-gap: 72px;
   @media screen and (min-width: 1200px) {
     row-gap: 48px;
   }
-  column-gap: 24px;
 }
 
 .portfolio-item {
@@ -61,26 +60,7 @@
 }
 
 .portfolio-card-name {
-  text-align: start;
   margin-bottom: 8px;
-
-  font-weight: 500;
-
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
-  color: var(--dark-color);
-}
-
-.card-group {
-  text-align: start;
-
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--text-color);
 }
 
 .card-wrapper {

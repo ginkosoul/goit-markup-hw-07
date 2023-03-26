@@ -4,13 +4,6 @@
 
 .our-team-head {
   margin-bottom: 72px;
-  text-align: center;
-
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-
-  color: var(--dark-color);
 }
 
 .team-list {
@@ -35,6 +28,8 @@
 
 .team-card-img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card-item-div {
@@ -45,21 +40,8 @@
   margin-bottom: 8px;
 
   text-align: center;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
-  color: var(--dark-color);
 }
 .teammate-trade {
   text-align: center;
   margin-bottom: 8px;
-
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-
-  color: var(--text-color);
 }

@@ -1,14 +1,7 @@
-.order-servise-btn {
-  padding: 16px 32px 16px 32px;
+.blue-btn {
+  padding: 16px 32px;
   border: none;
   border-radius: 4px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-
-  color: var(--white-color);
 
   background-color: var(--primary-brand-color);
   transition: background-color var(--transition-time-func),
@@ -17,8 +10,8 @@
   cursor: pointer;
 }
 
-.order-servise-btn:focus,
-.order-servise-btn:hover {
+.blue-btn:focus,
+.blue-btn:hover {
   background-color: var(--pressed-state-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -28,14 +21,10 @@
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   background-color: var(--light-color);
-
   color: var(--primary-brand-color);
   cursor: pointer;
+
   transition: background-color var(--transition-time-func),
     color var(--transition-time-func), border-color var(--transition-time-func),
     box-shadow var(--transition-time-func);
@@ -92,27 +81,20 @@
 
   min-width: 165px;
   padding: 8px 24px;
-  border: none;
-  border-radius: 4px;
+  // border: none;
+  // border-radius: 4px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  // background-color: var(--primary-brand-color);
+  // transition: background-color var(--transition-time-func),
+  //   box-shadow var(--transition-time-func);
 
-  color: var(--white-color);
-
-  background-color: var(--primary-brand-color);
-  transition: background-color var(--transition-time-func),
-    box-shadow var(--transition-time-func);
-
-  cursor: pointer;
+  // cursor: pointer;
 }
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--pressed-state-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+// .subscribe-btn:hover,
+// .subscribe-btn:focus {
+//   background-color: var(--pressed-state-color);
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// }
 .subscribe-btn-text {
   margin-right: 16px;
 }
@@ -122,4 +104,7 @@
 .subscribe-lbl {
   display: block;
   margin-bottom: 16px;
+  font-weight: 500;
+
+  color: var(--white-color);
 }
