@@ -1082,6 +1082,7 @@ body.overflow {
 
 .filter-list {
   display: flex;
+  max-width: 264px;
   flex-wrap: wrap;
   -moz-column-gap: 24px;
        column-gap: 24px;
@@ -1092,6 +1093,7 @@ body.overflow {
 @media screen and (min-width: 768px) {
   .filter-list {
     justify-content: center;
+    max-width: 100%;
   }
 }
 
