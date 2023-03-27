@@ -1,0 +1,42 @@
+/* =====================FOOTER-SOCIAL===================== */
+.social-footer {
+  align-self: center;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    align-self: flex-start;
+  }
+  @media screen and (min-width: 768px) {
+    align-self: flex-start;
+  }
+}
+.social-text {
+  font-weight: 500;
+  margin-bottom: 16px;
+
+  color: var(--white-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 86vw;
+  width: 208px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--light-black);
+  transition: background-color var(--transition-time-func);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--success-color);
+}
+/* =====================/FOOTER-SOCIAL===================== */

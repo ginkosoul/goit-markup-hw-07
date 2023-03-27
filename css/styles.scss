@@ -1,10 +1,16 @@
-@import '../scss/utils/_var';
+@import '../scss/utils/var';
 
 @import '../scss/base/default-styles';
+@import '../scss/base/default-font-styles';
 
-@import '../scss/components/active-components';
+@import '../scss/components/blue-btn';
 @import '../scss/components/menu-mobile';
-@import '../scss/components/socia-list';
+@import '../scss/components/social-list';
+@import '../scss/components/social-list-footer';
+@import '../scss/components/subscribe_footer';
+@import '../scss/components/subscribe-btn';
+@import '../scss/components/filter-buton';
+@import '../scss/components/modal-close-btn';
 
 @import '../scss/layout/header';
 @import '../scss/layout/hero';

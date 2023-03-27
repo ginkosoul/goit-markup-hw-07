@@ -1,0 +1,20 @@
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+
+  min-width: 165px;
+  padding: 8px 24px;
+}
+.subscribe-btn-text {
+  margin-right: 16px;
+}
+.subscribe-btn-icon {
+  fill: currentColor;
+}
+.subscribe-lbl {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+
+  color: var(--white-color);
+}

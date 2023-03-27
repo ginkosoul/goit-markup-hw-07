@@ -1,0 +1,43 @@
+/* ======================SUBSCRIBE====================== */
+.subscribe-footer {
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 24px;
+  align-self: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+}
+.subscribe-input {
+  width: 100%;
+  max-width: 396px;
+  @media screen and (min-width: 768px) {
+    min-width: 264px;
+  }
+
+  padding: 8px 16px;
+  align-self: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: inherit;
+  color: var(--white-color);
+
+  transition: border-color var(--transition-time-func);
+}
+.subscribe-input:focus {
+  border-color: var(--primary-brand-color);
+}
+/* ======================/SUBSCRIBE====================== */

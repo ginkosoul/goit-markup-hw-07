@@ -182,78 +182,6 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.filter-btn {
-  padding: 11px 23px;
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  background-color: var(--light-color);
-  color: var(--primary-brand-color);
-  cursor: pointer;
-  transition: background-color var(--transition-time-func), color var(--transition-time-func), border-color var(--transition-time-func), box-shadow var(--transition-time-func);
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-  background-color: var(--pressed-state-color);
-  color: var(--white-color);
-  border-color: var(--pressed-state-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.modal-close-btn {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border: 1px solid var(--light-blackr);
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  transition: border-color var(--transition-time-func), background-color var(--transition-time-func), box-shadow var(--transition-time-func);
-  cursor: pointer;
-}
-
-.modal-close-btn-icon {
-  transition: fill var(--transition-time-func);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--pressed-state-color);
-  border-color: var(--pressed-state-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--white-color);
-}
-
-.subscribe-btn {
-  display: flex;
-  align-items: center;
-  min-width: 165px;
-  padding: 8px 24px;
-}
-
-.subscribe-btn-text {
-  margin-right: 16px;
-}
-
-.subscribe-btn-icon {
-  fill: currentColor;
-}
-
-.subscribe-lbl {
-  display: block;
-  margin-bottom: 16px;
-  font-weight: 500;
-  color: var(--white-color);
-}
-
 .mobile-menu {
   display: none;
   position: fixed;
@@ -317,6 +245,179 @@ p {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--pressed-state-color);
+}
+
+/* =====================FOOTER-SOCIAL===================== */
+.social-footer {
+  align-self: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    align-self: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-footer {
+    align-self: flex-start;
+  }
+}
+
+.social-text {
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--white-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 86vw;
+  width: 208px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-black);
+  transition: background-color var(--transition-time-func);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--success-color);
+}
+
+/* =====================/FOOTER-SOCIAL===================== */
+/* ======================SUBSCRIBE====================== */
+.subscribe-footer {
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-footer {
+    margin-left: auto;
+  }
+}
+
+.subscribe {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  align-self: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    justify-content: start;
+    flex-wrap: nowrap;
+  }
+}
+
+.subscribe-input {
+  width: 100%;
+  max-width: 396px;
+  padding: 8px 16px;
+  align-self: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--white-color);
+  transition: border-color var(--transition-time-func);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    min-width: 264px;
+  }
+}
+
+.subscribe-input:focus {
+  border-color: var(--primary-brand-color);
+}
+
+/* ======================/SUBSCRIBE====================== */
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  min-width: 165px;
+  padding: 8px 24px;
+}
+
+.subscribe-btn-text {
+  margin-right: 16px;
+}
+
+.subscribe-btn-icon {
+  fill: currentColor;
+}
+
+.subscribe-lbl {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.filter-btn {
+  padding: 7px 15px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--light-color);
+  color: var(--primary-brand-color);
+  cursor: pointer;
+  transition: background-color var(--transition-time-func), color var(--transition-time-func), border-color var(--transition-time-func), box-shadow var(--transition-time-func);
+}
+@media screen and (min-width: 768px) {
+  .filter-btn {
+    padding: 11px 23px;
+  }
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
+  border-color: var(--pressed-state-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--light-blackr);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transition: border-color var(--transition-time-func), background-color var(--transition-time-func), box-shadow var(--transition-time-func);
+  cursor: pointer;
+}
+
+.modal-close-btn-icon {
+  transition: fill var(--transition-time-func);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--pressed-state-color);
+  border-color: var(--pressed-state-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--white-color);
 }
 
 .main-header {
@@ -811,100 +912,6 @@ p {
   align-self: center;
   justify-content: center;
   color: var(--light-color);
-}
-
-/* ==============footer-social============== */
-.social-footer {
-  align-self: center;
-  justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .social-footer {
-    align-self: flex-start;
-  }
-}
-@media screen and (min-width: 768px) {
-  .social-footer {
-    align-self: flex-start;
-  }
-}
-
-.social-text {
-  font-weight: 500;
-  margin-bottom: 16px;
-  color: var(--white-color);
-}
-
-.footer-social-list {
-  display: flex;
-  justify-content: flex-start;
-  gap: 16px;
-}
-
-.footer-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  background-color: var(--light-black);
-  transition: background-color var(--transition-time-func);
-}
-
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
-  background-color: var(--success-color);
-}
-
-/* ==============/footer-social============== */
-/* ==============================SUBSCRIBE============================== */
-.subscribe-footer {
-  justify-content: center;
-}
-@media screen and (min-width: 1200px) {
-  .subscribe-footer {
-    margin-left: auto;
-  }
-}
-
-.subscribe {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 16px;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
-  align-self: center;
-  justify-content: center;
-}
-@media screen and (min-width: 768px) {
-  .subscribe {
-    justify-content: start;
-    flex-wrap: nowrap;
-  }
-}
-
-.subscribe-input {
-  width: 100%;
-  max-width: 396px;
-  padding: 8px 16px;
-  align-self: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: inherit;
-  color: var(--white-color);
-  transition: border-color var(--transition-time-func);
-}
-@media screen and (min-width: 768px) {
-  .subscribe-input {
-    min-width: 264px;
-  }
-}
-
-.subscribe-input:focus {
-  border-color: var(--primary-brand-color);
 }
 
 /* ==============================MODAL WINDOW============================== */
