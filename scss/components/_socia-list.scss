@@ -3,6 +3,12 @@
   justify-content: space-around;
 }
 
+.social-list-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 328px;
+}
+
 .social-list-link {
   display: flex;
   align-items: center;

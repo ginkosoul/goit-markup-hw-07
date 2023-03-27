@@ -30,7 +30,8 @@
 }
 
 .portfolio-item {
-  flex-basis: 100%;
+  flex-basis: calc(100% - 32px);
+  // max-width: calc(100vw - 32px);
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 24px) / 2);
   }
@@ -48,9 +49,12 @@
 .card-link {
   display: block;
   transition: box-shadow var(--transition-time-func);
+  // max-width: calc(100vw - 32px);
 }
 .card-image {
   display: block;
+  max-width: calc(100vw - 32px);
+  height: auto;
 }
 
 .card-div {

@@ -77,7 +77,9 @@
   justify-content: start;
 }
 .menu-item:not(:last-child) {
-  margin-right: 40px;
+  @media screen and (min-width: 768px) {
+    margin-right: 40px;
+  }
 }
 .menu-link {
   display: flex;
@@ -116,10 +118,11 @@
 }
 
 .contact-info {
+  display: block;
   font-style: normal;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
@@ -143,6 +146,12 @@
   transform: scaleX(1);
 }
 
-.address-item:not(:first-child) {
-  margin-left: 40px;
+.address-item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 6px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }

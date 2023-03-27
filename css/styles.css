@@ -297,6 +297,12 @@ p {
   justify-content: space-around;
 }
 
+.social-list-menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 328px;
+}
+
 .social-list-link {
   display: flex;
   align-items: center;
@@ -405,8 +411,10 @@ p {
   justify-content: start;
 }
 
-.menu-item:not(:last-child) {
-  margin-right: 40px;
+@media screen and (min-width: 768px) {
+  .menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 
 .menu-link {
@@ -450,10 +458,11 @@ p {
 }
 
 .contact-info {
+  display: block;
   font-style: normal;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   color: var(--text-color);
   transition: color var(--transition-time-func);
 }
@@ -478,8 +487,16 @@ p {
   transform: scaleX(1);
 }
 
-.address-item:not(:first-child) {
-  margin-left: 40px;
+@media screen and (min-width: 768px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-item:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .hero-section {
@@ -1085,7 +1102,7 @@ body.overflow {
 }
 
 .portfolio-item {
-  flex-basis: 100%;
+  flex-basis: calc(100% - 32px);
 }
 @media screen and (min-width: 768px) {
   .portfolio-item {
@@ -1110,6 +1127,8 @@ body.overflow {
 
 .card-image {
   display: block;
+  max-width: calc(100vw - 32px);
+  height: auto;
 }
 
 .card-div {
